@@ -1,5 +1,6 @@
 # PorousScaffold
-Generating Porous scaffold based on B-spline solid using TPMS
+Generating Porous scaffold based on B-spline solid using TPMS.
+The projects are run on Windows operating system, and thes specified compiling platform is Visual Studio 2013.
 
 # MarchingTetrahedrons
 Openmesh library, OpenGL library and Eigen library are called.
