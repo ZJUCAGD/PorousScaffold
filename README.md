@@ -5,11 +5,11 @@ The projects are run on Windows operating system, and thes specified compiling p
 # MarchingTetrahedrons
 Openmesh library, OpenGL library and Eigen library are called.
 
-`extractisosurface:` \<br>   
+`extractisosurface:` \  
 Generate the TPMS structures in the parametric domain by Marching Tetrahedral algorithm.
-`curvature2threshold:` \<br> 
+`curvature2threshold:` \
 Map the mean curvature of the solid model's surface to the threshold filed according to the TPMS, and a TDF file is generated.
-`porosityPereservation:` \<br>
+`porosityPereservation:` \
 Preserve the porosity of the porous scaffold before and after mapping by the optimization method.
 
 # ScaffoldGeneration
