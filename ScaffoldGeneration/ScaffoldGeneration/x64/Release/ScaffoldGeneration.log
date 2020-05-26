@@ -1,0 +1,38 @@
+﻿生成启动时间为 2020/05/22 10:47:39。
+     1>项目“E:\project\huchuanfeng\code\ScaffoldGeneration\ScaffoldGeneration\ScaffoldGeneration.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Moc'ing scaffoldgeneration.h...
+         Uic'ing scaffoldgeneration.ui...
+         Moc'ing OpenGlWidget.h...
+         Rcc'ing scaffoldgeneration.qrc...
+     1>RCC : warning : No resources in 'E:\project\huchuanfeng\code\ScaffoldGeneration\ScaffoldGeneration\scaffoldgeneration.qrc'.
+         
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_OpenGlWidget.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_OpenGlWidget.cpp, GeneratedFiles\Release\moc_OpenGlWidget.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_scaffoldgeneration.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_scaffoldgeneration.cpp, GeneratedFiles\Release\moc_scaffoldgeneration.cpp.
+       ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include /I.\GeneratedFiles\Release /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets /nologo /W1 /WX- /O2 /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\qrc_scaffoldgeneration.cpp
+         qrc_scaffoldgeneration.cpp
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include /I.\GeneratedFiles\Release /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL /IF:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets /nologo /W1 /WX- /O2 /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Release\moc_OpenGlWidget.cpp GeneratedFiles\Release\moc_scaffoldgeneration.cpp main.cpp math3D.cpp OpenGlWidget.cpp scaffoldgeneration.cpp ScaffoldMesh.cpp
+         moc_OpenGlWidget.cpp
+         moc_scaffoldgeneration.cpp
+         main.cpp
+         math3D.cpp
+         OpenGlWidget.cpp
+         scaffoldgeneration.cpp
+         ScaffoldMesh.cpp
+         正在生成代码...
+       Link:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\project\huchuanfeng\code\ScaffoldGeneration\x64\Release\\ScaffoldGeneration.exe" /NOLOGO /LIBPATH:F:\Qt\Qt5.5.1\5.5\msvc2013_64\lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5OpenGL.lib opengl32.lib glu32.lib Qt5Widgets.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\huchuanfeng\code\ScaffoldGeneration\x64\Release\ScaffoldGeneration.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\huchuanfeng\code\ScaffoldGeneration\x64\Release\ScaffoldGeneration.lib" /MACHINE:X64 x64\Release\qrc_scaffoldgeneration.obj
+         x64\Release\moc_OpenGlWidget.obj
+         x64\Release\moc_scaffoldgeneration.obj
+         x64\Release\main.obj
+         x64\Release\math3D.obj
+         x64\Release\OpenGlWidget.obj
+         x64\Release\scaffoldgeneration.obj
+         x64\Release\ScaffoldMesh.obj
+         ScaffoldGeneration.vcxproj -> E:\project\huchuanfeng\code\ScaffoldGeneration\x64\Release\ScaffoldGeneration.exe
+     1>已完成生成项目“E:\project\huchuanfeng\code\ScaffoldGeneration\ScaffoldGeneration\ScaffoldGeneration.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:08.32
