@@ -242,18 +242,23 @@ void discrete_curvature()
 void zoom_TDF(int type_TPMS, int type_structure)
 {
 	double maxC, minC;
-	maxC = minC = fabs(cube_curvature[0][0][0].value);
+	vector<double> cur;
 	for (int i = 0; i < cube_cur_num_x; i++)
 	{
 		for (int j = 0; j < cube_cur_num_y; j++)
 		{
 			for (int k = 0; k < cube_cur_num_z; k++)
 			{
-				minC = minC<fabs(cube_curvature[i][j][k].value) ? minC : fabs(cube_curvature[i][j][k].value);
-				maxC = maxC>fabs(cube_curvature[i][j][k].value) ? maxC : fabs(cube_curvature[i][j][k].value);
+				cur.push_back(fabs(cube_curvature[i][j][k].value));
+
 			}
 		}
 	}
+	sort(cur.begin(), cur.end());
+	double per = 0.05;
+	minC = cur[0];
+	maxC = cur[cur.size() - 1 - int(cur.size()*per)];
+
 	if (type_TPMS == 0 || type_TPMS == 1)
 	{
 		if (type_structure == 0 || type_structure == 1)
@@ -300,7 +305,15 @@ void scale_stretch(double begin_minC, double begin_maxC, double end_minC, double
 		{
 			for (int k = 0; k < cube_cur_num_z; k++)
 			{
-				cube_curvature[i][j][k].value = end_range*(fabs(cube_curvature[i][j][k].value) - begin_minC) / begin_range + end_minC;
+				if (fabs(cube_curvature[i][j][k].value)>begin_maxC){
+					cube_curvature[i][j][k].value = end_maxC;
+				}
+				else if (fabs(cube_curvature[i][j][k].value)<begin_minC){
+					cube_curvature[i][j][k].value = end_minC;
+				}
+				else{
+					cube_curvature[i][j][k].value = end_range*(fabs(cube_curvature[i][j][k].value) - begin_minC) / begin_range + end_minC;
+				}
 			}
 		}
 	}
