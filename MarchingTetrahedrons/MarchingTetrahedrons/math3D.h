@@ -160,9 +160,9 @@ class Vector3D {
 		Vector3D cross(Vector3D& value)
 		{
 			Vector3D result;
-			result.x = y*value.z - value.y*z;
-			result.y = x*value.z - value.x*z;
-			result.z = x*value.y - value.x*y;
+			result.x = y*value.z - z*value.y;
+			result.y = z*value.x - x*value.z;
+			result.z = x*value.y - y*value.x;
 			return result;
 		}
 		double dot(Vector3D& value)
